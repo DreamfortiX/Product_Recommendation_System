@@ -1,5 +1,6 @@
 package com.example.recommendation_system
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.recommendation_system.databinding.ActivitySplashBinding
 import kotlin.jvm.java
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var progressBar: ProgressBar

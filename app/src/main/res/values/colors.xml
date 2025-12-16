@@ -10,6 +10,8 @@
     <!-- Basic colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
     <color name="gray_100">#FFF5F5F5</color>
     <color name="gray_300">#E0E0E0</color>
     <color name="gray_500">#9E9E9E</color>
@@ -146,8 +148,6 @@
     <color name="card_background_dark">#1E1E1E</color>
     <color name="card_elevation_color">#0D47A1</color>
     <color name="tertiary_light">#FFB74D</color>
-
-
 
 
 </resources>

@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.recommendation_system"
-        minSdk = 22
+        minSdk = 23
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -57,8 +57,8 @@ dependencies {
     // Lottie for vector animations
     implementation("com.airbnb.android:lottie:6.1.0")
 
-    // Charts
-    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+//    // Charts
+//    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
 
     // Hilt

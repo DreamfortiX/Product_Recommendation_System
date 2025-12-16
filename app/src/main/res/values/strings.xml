@@ -1,3 +1,68 @@
 <resources>
     <string name="app_name">Recommendation_System</string>
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search products…</string>
+    <string name="no_results">No results found</string>
+
+    <!-- Product -->
+    <string name="price">Price: %s</string>
+    <string name="rating">Rating: %s</string>
+    <string name="category">Category: %s</string>
+
+    <!-- Sections -->
+    <string name="search_results">Search Results</string>
+    <string name="selected_product">Selected Product</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="similar_products">Similar Products</string>
+
+    <!-- Details -->
+    <string name="product_details">Product Details</string>
+    <string name="description">Description</string>
+    <string name="specifications">Specifications</string>
+    <string name="reviews">Reviews</string>
+
+    <!-- Buttons -->
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="view_details">View Details</string>
+
+    <!-- Messages -->
+    <string name="network_error">Network error. Please check your connection.</string>
+    <string name="server_error">Server error. Please try again later.</string>
+    <string name="no_internet">No internet connection</string>
+
+    <!-- Empty states -->
+    <string name="empty_search">Try searching for products</string>
+    <string name="empty_recommendations">No recommendations available</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_search">Search products</string>
+    <string name="a11y_product_image">Product image</string>
+    <string name="a11y_add_to_cart">Add to cart</string>
+    <string name="a11y_product_rating">Rating: %1$s out of 5</string>
+    <string name="no_internet_continuing_offline">No internet. Continuing offline…</string>
+    <string name="loading_app_data">Loading app data…</string>
+    <string name="history_title">History</string>
+    <string name="deleted">Deleted</string>
+    <string name="undo">Undo</string>
+    <string name="history_empty_title">No Analysis History</string>
+    <string name="history_empty">You haven\'t analyzed any products yet.\nStart by comparing products or generating summaries.</string>
+    <string name="compare_products">Compare Products</string>
+    <string name="ai_recommend">AI $ Recommend</string>
+
+    <!-- Onboarding Screen -->
+    <string name="skip">Skip</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="smart_product_recommender">Smart Product Recommender</string>
+    <string name="logout">Logout</string>
 </resources>

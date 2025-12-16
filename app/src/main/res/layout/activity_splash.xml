@@ -22,7 +22,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_margin="40dp">
+            android:layout_margin="30dp">
 
             <!-- AI Icon with Animation -->
             <com.airbnb.lottie.LottieAnimationView
@@ -47,7 +47,7 @@
                 android:fontFamily="@font/montserrat_bold" />
             <TextView
                 android:id="@+id/appNameTxt"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Recommend"
                 android:textSize="40sp"
