@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <!-- Background circle -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M40,4a36,36 0 1,0 0,72a36,36 0 1,0 0,-72z"/>
+    <!-- Inner accent arc -->
+    <path
+        android:fillColor="@color/primary_dark"
+        android:fillAlpha="0.35"
+        android:pathData="M40,10a30,30 0 1,0 0,60a30,30 0 0,0 0,-60z"/>
+    <!-- Simple mark (stylized C) -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M52,28c-3.6,-5 -9.3,-8 -15.5,-8c-10.8,0 -19.5,8.7 -19.5,19.5s8.7,19.5 19.5,19.5c6.2,0 11.9,-3 15.5,-8l-6.2,-3.6c-2.4,3.1 -6.1,4.9 -10,4.9c-7.1,0 -12.9,-5.8 -12.9,-12.9s5.8,-12.9 12.9,-12.9c3.9,0 7.6,1.8 10,4.9L52,28z"/>
+</vector>

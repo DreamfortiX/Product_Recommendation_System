@@ -1,5 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Brand colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Basic colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray_100">#FFF5F5F5</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_900">#212121</color>
+
+    <!-- Semantic colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FFC107</color>
+    <color name="info">#2196F3</color>
+
+    <!-- Background colors -->
+    <color name="background">#FFF8F9FA</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="on_surface">#1D1B20</color>
+    <color name="on_surface_variant">#49454F</color>
+
+    <!-- Dark theme colors -->
+    <color name="dark_surface">#1D1B20</color>
+    <color name="dark_on_surface">#E6E1E5</color>
+    <color name="dark_on_surface_variant">#CAC4D0</color>
+
+    <!-- Card colors -->
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="card_elevated">#FFFBFE</color>
+    <color name="card_outline">#79747E</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#1D1B20</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_hint">#79747E</color>
+
+    <!-- State colors -->
+    <color name="state_pressed">#1F000000</color>
+    <color name="state_focused">#1F000000</color>
+    <color name="state_hovered">#14000000</color>
+
+    <!-- Divider color -->
+    <color name="divider">#1F000000</color>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC6</color>
+
+    <color name="chip_background">#E3F2FD</color>
+
+    <!-- Method Colors -->
+    <color name="method_cosine">#FFCDD2</color> <!-- Light Red -->
+    <color name="method_decision_tree">#C8E6C9</color> <!-- Light Green -->
+    <color name="method_gnn">#BBDEFB</color> <!-- Light Blue -->
+    <color name="method_hybrid">#E1BEE7</color> <!-- Light Purple -->
+    <color name="method_default">#E0E0E0</color> <!-- Light Gray -->
+
+    <!-- Score Colors -->
+    <color name="score_high">#4CAF50</color> <!-- Green -->
+    <color name="score_medium">#FF9800</color> <!-- Orange -->
+    <color name="score_low">#F44336</color> <!-- Red -->
+
+    <!-- Rating Colors -->
+    <color name="rating_high">#FF9800</color> <!-- Orange -->
+    <color name="rating_medium">#FFC107</color> <!-- Amber -->
+    <color name="rating_low">#9E9E9E</color> <!-- Gray -->
+
+    <!-- Splash Screen Gradient Colors -->
+    <color name="splash_background">#1a237e</color> <!-- Dark Blue -->
+    <color name="splash_gradient_start">#1a237e</color> <!-- Dark Blue -->
+    <color name="splash_gradient_end">#311b92</color> <!-- Deep Purple -->
+
+
+    <color name="primary">#FF667eea</color>
+    <color name="primary_for_button">#3268A9</color>
+    <color name="primary_dark">#FF764ba2</color>
+    <color name="secondary">#10B981</color>
+    <color name="positive_sentiment">#10B981</color>
+    <color name="negative_sentiment">#EF4444</color>
+    <color name="neutral_sentiment">#94A3B8</color>
+    <color name="positive_green">#10B981</color>
+    <color name="feature_card_background">#802D3748</color>
+    <!-- Analyze screen specific -->
+    <color name="header_card_background">#801A237E</color>
+    <color name="input_card_background">#802D3748</color>
+    <color name="error_card_background">#80FF6B6B</color>
+    <color name="tips_card_background">#40334D71</color>
+    <!-- Result screen specific -->
+    <color name="main_card_background">#801A237E</color>
+    <color name="message_card_background">#402D3748</color>
+    <!-- Comparison screen additions -->
+    <color name="surface_variant">#1F2937</color>
+    <color name="primary_color">#6366F1</color>
+    <color name="top_pick_gradient">#402D3748</color>
+    <color name="gold">#FFD54F</color>
+
+    <!-- Technique Colors (Matching your icons) -->
+    <color name="cosine_color">#4285F4</color> <!-- Google Blue -->
+    <color name="decision_tree_color">#34A853</color> <!-- Google Green -->
+    <color name="gnn_color">#EA4335</color> <!-- Google Red -->
+
+    <!-- Alternative Technique Colors (if you want different ones) -->
+    <!-- <color name="cosine_color">#2196F3</color> --> <!-- Material Blue -->
+    <!-- <color name="decision_tree_color">#4CAF50</color> --> <!-- Material Green -->
+    <!-- <color name="gnn_color">#9C27B0</color> --> <!-- Material Purple -->
+
+    <color name="primary_light">#FF9A6A</color> <!-- Light Orange -->
+
+    <!-- Secondary Colors -->
+    <color name="secondary_color">#4285F4</color> <!-- Blue -->
+    <color name="secondary_dark">#3367D6</color> <!-- Dark Blue -->
+    <color name="secondary_light">#76A7FA</color> <!-- Light Blue -->
+
+
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_dark">#424242</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+
+    <!-- Transparent Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_20">#33000000</color>
+
+    <!-- Gradient Colors for Other Screens -->
+    <color name="gradient_start">#667eea</color>
+    <color name="gradient_middle">#764ba2</color>
+    <color name="gradient_end">#f093fb</color>
+
+    <!-- Card Colors -->
+    <color name="card_background_light">#FFFFFF</color>
+    <color name="card_background_dark">#1E1E1E</color>
+    <color name="card_elevation_color">#0D47A1</color>
+    <color name="tertiary_light">#FFB74D</color>
+
+
+
+
 </resources>
