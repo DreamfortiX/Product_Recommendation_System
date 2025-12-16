@@ -12,6 +12,9 @@ import com.airbnb.lottie.LottieAnimationView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.recommendation_system.databinding.ActivitySplashBinding
 import kotlin.jvm.java
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -40,6 +43,8 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        hideStatusBar()
+
         // Initialize views
         progressBar = findViewById(R.id.progressBar)
         progressText = findViewById(R.id.progressText)
@@ -52,6 +57,14 @@ class SplashActivity : AppCompatActivity() {
 
         // Start progress animation
         startLoadingAnimation()
+    }
+
+    private fun hideStatusBar() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val controller = WindowInsetsControllerCompat(window, window.decorView)
+        controller.hide(WindowInsetsCompat.Type.statusBars())
+        controller.systemBarsBehavior =
+            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     }
 
     private fun startLoadingAnimation() {

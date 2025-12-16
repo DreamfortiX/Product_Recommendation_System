@@ -23,6 +23,8 @@ import kotlin.text.isNotEmpty
 import kotlin.text.orEmpty
 import kotlin.text.trim
 import androidx.core.content.edit
+import android.text.Editable
+import android.text.TextWatcher
 
 class SignupActivity : AppCompatActivity() {
 
@@ -54,6 +56,27 @@ class SignupActivity : AppCompatActivity() {
         btnBack.setOnClickListener { finish() }
         textLogin.setOnClickListener { finish() }
 
+        editName.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { nameLayout.error = null }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+        editEmail.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { emailLayout.error = null }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+        editPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { passwordLayout.error = null }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+        editConfirmPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { confirmPasswordLayout.error = null }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+
         btnSignup.setOnClickListener {
             // Reset previous errors
             nameLayout.error = null
@@ -78,8 +101,8 @@ class SignupActivity : AppCompatActivity() {
                 emailLayout.error = "Invalid email"
                 hasError = true
             }
-            if (password.length < 6) {
-                passwordLayout.error = "At least 6 characters"
+            if (!isStrongPassword(password)) {
+                passwordLayout.error = "Min 8 chars, include upper, lower and digit"
                 hasError = true
             }
             if (confirmPassword != password) {
@@ -134,5 +157,13 @@ class SignupActivity : AppCompatActivity() {
         }
         startActivity(intent)
         finish()
+    }
+
+    private fun isStrongPassword(pw: String): Boolean {
+        if (pw.length < 8) return false
+        val upper = pw.any { it.isUpperCase() }
+        val lower = pw.any { it.isLowerCase() }
+        val digit = pw.any { it.isDigit() }
+        return upper && lower && digit
     }
 }
