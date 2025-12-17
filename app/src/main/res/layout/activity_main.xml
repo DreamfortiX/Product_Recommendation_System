@@ -144,95 +144,95 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Quick Actions Card with chips -->
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardActions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp"
-                app:cardBackgroundColor="@color/card_background"
-                app:strokeColor="@color/secondary_light"
-                app:strokeWidth="1dp">
+<!--            &lt;!&ndash; Quick Actions Card with chips &ndash;&gt;-->
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/cardActions"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="24dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="8dp"-->
+<!--                app:cardBackgroundColor="@color/card_background"-->
+<!--                app:strokeColor="@color/secondary_light"-->
+<!--                app:strokeWidth="1dp">-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="24dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="24dp">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="⚡ Quick Actions"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/primary_dark"
-                        android:layout_marginBottom="20dp" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="⚡ Quick Actions"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="@color/primary_dark"-->
+<!--                        android:layout_marginBottom="20dp" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="12dp"
-                        android:gravity="center">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginBottom="12dp"-->
+<!--                        android:gravity="center">-->
 
-                        <com.google.android.material.chip.Chip
-                            android:id="@+id/chipCategories"
-                            style="@style/Widget.Material3.Chip.Assist"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginEnd="8dp"
-                            android:text="Categories"
-                            app:chipIcon="@drawable/ic_category"
-                            app:chipBackgroundColor="@color/chip_background" />
+<!--                        <com.google.android.material.chip.Chip-->
+<!--                            android:id="@+id/chipCategories"-->
+<!--                            style="@style/Widget.Material3.Chip.Assist"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:text="Categories"-->
+<!--                            app:chipIcon="@drawable/ic_category"-->
+<!--                            app:chipBackgroundColor="@color/chip_background" />-->
 
-                        <com.google.android.material.chip.Chip
-                            android:id="@+id/chipMethods"
-                            style="@style/Widget.Material3.Chip.Assist"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Methods"
-                            app:chipIcon="@drawable/ic_methods"
-                            app:chipBackgroundColor="@color/chip_background" />
+<!--                        <com.google.android.material.chip.Chip-->
+<!--                            android:id="@+id/chipMethods"-->
+<!--                            style="@style/Widget.Material3.Chip.Assist"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:text="Methods"-->
+<!--                            app:chipIcon="@drawable/ic_methods"-->
+<!--                            app:chipBackgroundColor="@color/chip_background" />-->
 
-                    </LinearLayout>
+<!--                    </LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:gravity="center">-->
 
-                        <com.google.android.material.chip.Chip
-                            android:id="@+id/chipTrending"
-                            style="@style/Widget.Material3.Chip.Assist"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginEnd="8dp"
-                            android:text="Trending"
-                            app:chipIcon="@drawable/ic_trending"
-                            app:chipBackgroundColor="@color/chip_background" />
+<!--                        <com.google.android.material.chip.Chip-->
+<!--                            android:id="@+id/chipTrending"-->
+<!--                            style="@style/Widget.Material3.Chip.Assist"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:text="Trending"-->
+<!--                            app:chipIcon="@drawable/ic_trending"-->
+<!--                            app:chipBackgroundColor="@color/chip_background" />-->
 
-                        <com.google.android.material.chip.Chip
-                            android:id="@+id/chipHistory"
-                            style="@style/Widget.Material3.Chip.Assist"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="History"
-                            app:chipIcon="@drawable/ic_history_empty"
-                            app:chipBackgroundColor="@color/chip_background" />
+<!--                        <com.google.android.material.chip.Chip-->
+<!--                            android:id="@+id/chipHistory"-->
+<!--                            style="@style/Widget.Material3.Chip.Assist"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:text="History"-->
+<!--                            app:chipIcon="@drawable/ic_history_empty"-->
+<!--                            app:chipBackgroundColor="@color/chip_background" />-->
 
-                    </LinearLayout>
+<!--                    </LinearLayout>-->
 
-                </LinearLayout>
+<!--                </LinearLayout>-->
 
-            </com.google.android.material.card.MaterialCardView>
+<!--            </com.google.android.material.card.MaterialCardView>-->
 
             <!-- Status Card with animated elements -->
             <com.google.android.material.card.MaterialCardView

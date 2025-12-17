@@ -40,16 +40,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.chipCategories.setOnClickListener {
-            // Show categories dialog
-            showCategoriesDialog()
-        }
-
-        binding.chipMethods.setOnClickListener {
-            // Show recommendation methods
-            val intent = Intent(this, RecommendationActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.chipCategories.setOnClickListener {
+//            // Show categories dialog
+//            showCategoriesDialog()
+//        }
+//
+//        binding.chipMethods.setOnClickListener {
+//            // Show recommendation methods
+//            val intent = Intent(this, RecommendationActivity::class.java)
+//            startActivity(intent)
+//        }
 
         // Logout button
         binding.btnProfile.setOnClickListener {
