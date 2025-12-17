@@ -14,7 +14,7 @@ object RetrofitClient {
     // On Windows: ipconfig in Command Prompt
     // On Mac/Linux: ifconfig or ip addr
     // Use your local IP, not 127.0.0.1 or localhost
-    private const val BASE_URL = "http://10.227.193.244:8000/"  // Your computer's IP
+    private const val BASE_URL = "http://10.92.235.244:8000/"  // Your computer's IP
 
     // For testing with emulator, you can use 10.0.2.2 for localhost
     // private const val BASE_URL = "http://10.0.2.2:8000/"
