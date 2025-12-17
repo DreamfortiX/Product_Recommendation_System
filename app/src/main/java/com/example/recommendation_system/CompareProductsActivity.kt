@@ -42,15 +42,18 @@ class CompareProductsActivity : AppCompatActivity() {
         val tvTitle: TextView = findViewById(R.id.tvCompareTitle)
         val recyclerView: RecyclerView = findViewById(R.id.recyclerCompare)
         val barChart: BarChart = findViewById(R.id.barChartPrices)
-        val pieChart: PieChart = findViewById(R.id.pieChartScores)
+//        val pieChart: PieChart = findViewById(R.id.pieChartScores)
 
         tvTitle.text = "Comparing ${products.size} products"
 
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        recyclerView.adapter = CompareProductsAdapter(products)
+        // Sort strictly by price (ascending) for comparison
+        val productsByPrice = products.sortedBy { it.price }
 
-        setupBarChart(barChart, products)
-        setupPieChart(pieChart, products)
+        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.adapter = CompareProductsAdapter(ArrayList(productsByPrice))
+
+        setupBarChart(barChart, productsByPrice)
+//        setupPieChart(pieChart, productsByPrice)
     }
 
     private fun setupBarChart(barChart: BarChart, products: List<Product>) {

@@ -3,12 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#BFACA4"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/tvCompareTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:background="#BCA9A3"
         android:text="Compare Products"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -17,14 +21,14 @@
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barChartPrices"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="350dp"
         android:layout_marginBottom="12dp" />
 
-    <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/pieChartScores"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="12dp" />
+<!--    <com.github.mikephil.charting.charts.PieChart-->
+<!--        android:id="@+id/pieChartScores"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginBottom="12dp" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCompare"
