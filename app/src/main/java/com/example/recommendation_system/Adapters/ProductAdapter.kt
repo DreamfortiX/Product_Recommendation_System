@@ -1,4 +1,4 @@
-package com.example.choice.Adapters
+package com.example.recommendation_system.Adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,9 +8,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recommendation_system.R
-import com.example.choice.data.model.Product
 import android.widget.Button
 import android.widget.RatingBar
+import com.example.recommendation_system.data.model.Product
 
 
 class ProductAdapter(

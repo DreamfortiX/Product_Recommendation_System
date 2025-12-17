@@ -1,4 +1,4 @@
-package com.example.choice.Adapters
+package com.example.recommendation_system.Adapters
 
 
 import android.view.LayoutInflater
@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recommendation_system.R
-import com.example.choice.data.model.Product
+import com.example.recommendation_system.data.model.Product
 import com.google.android.material.chip.Chip
 
 class RecommendationAdapter(

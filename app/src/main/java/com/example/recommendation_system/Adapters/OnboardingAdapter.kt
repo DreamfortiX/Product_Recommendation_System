@@ -1,4 +1,4 @@
-package com.example.choice.Adapters
+package com.example.recommendation_system.Adapters
 
 
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
 import com.example.recommendation_system.R
-import com.example.choice.data.model.OnboardingItem
+import com.example.recommendation_system.data.model.OnboardingItem
 
 class OnboardingAdapter(
     private val items: List<OnboardingItem>,

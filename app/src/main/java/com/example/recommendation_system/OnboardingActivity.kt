@@ -16,12 +16,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.choice.Adapters.OnboardingAdapter
-import com.example.choice.data.model.OnboardingItem
 import kotlin.apply
 import kotlin.collections.forEachIndexed
 import kotlin.jvm.java
 import androidx.core.content.edit
+import com.example.recommendation_system.Adapters.OnboardingAdapter
+import com.example.recommendation_system.data.model.OnboardingItem
 
 class OnboardingActivity : AppCompatActivity() {
 

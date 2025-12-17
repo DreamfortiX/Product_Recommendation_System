@@ -2,13 +2,12 @@ package com.example.recommendation_system.data.api
 
 
 
-import com.example.choice.data.model.HealthResponse
-import com.example.choice.data.model.ProductInfo
-import com.example.choice.data.model.RecommendationRequest
-import com.example.choice.data.model.RecommendationResponse
-import com.example.choice.data.model.SearchRequest
-import com.example.choice.data.model.SearchResponse
-import retrofit2.http.*
+import com.example.recommendation_system.data.model.HealthResponse
+import com.example.recommendation_system.data.model.ProductInfo
+import com.example.recommendation_system.data.model.RecommendationRequest
+import com.example.recommendation_system.data.model.RecommendationResponse
+import com.example.recommendation_system.data.model.SearchRequest
+import com.example.recommendation_system.data.model.SearchResponse
 import retrofit2.Response
 import retrofit2.http.*
 

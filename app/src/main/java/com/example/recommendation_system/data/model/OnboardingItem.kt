@@ -1,4 +1,4 @@
-package com.example.choice.data.model
+package com.example.recommendation_system.data.model
 
 data class OnboardingItem(
     val title: String,

@@ -1,4 +1,4 @@
-package com.example.choice.data.model
+package com.example.recommendation_system.data.model
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
