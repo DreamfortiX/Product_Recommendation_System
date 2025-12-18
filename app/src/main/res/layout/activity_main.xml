@@ -45,18 +45,18 @@
                     android:layout_toEndOf="@+id/toolbarIcon"
                     android:text="@string/smart_product_recommender"
                     android:textColor="@android:color/white"
-                    android:textSize="18sp"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/btnProfile"
+                    android:id="@+id/view_hidtory"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="@string/profile"
-                    android:src="@drawable/ic_person"
+                    android:src="@drawable/ic_history"
                     app:tint="@android:color/white" />
 
             </RelativeLayout>
@@ -143,6 +143,7 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
 
 <!--            &lt;!&ndash; Quick Actions Card with chips &ndash;&gt;-->
 <!--            <com.google.android.material.card.MaterialCardView-->

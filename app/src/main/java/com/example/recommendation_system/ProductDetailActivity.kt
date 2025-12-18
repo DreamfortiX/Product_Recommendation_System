@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.recommendation_system.data.api.RetrofitClient
 import com.example.recommendation_system.data.model.ProductInfo
@@ -22,6 +25,7 @@ class ProductDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProductDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        hideStatusBar()
 
         // Get product data from intent
         currentAsin = intent.getStringExtra("asin")
@@ -87,6 +91,13 @@ class ProductDetailActivity : AppCompatActivity() {
         binding.swipeRefresh.setOnRefreshListener {
             loadProductDetails()
         }
+    }
+    private fun hideStatusBar() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val controller = WindowInsetsControllerCompat(window, window.decorView)
+        controller.hide(WindowInsetsCompat.Type.statusBars())
+        controller.systemBarsBehavior =
+            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     }
 
     private fun loadProductDetails() {

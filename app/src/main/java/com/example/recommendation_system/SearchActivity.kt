@@ -6,6 +6,9 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recommendation_system.Adapters.ProductAdapter
@@ -20,6 +23,7 @@ class SearchActivity : AppCompatActivity(), ProductAdapter.OnProductClickListene
     private lateinit var adapter: ProductAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        hideStatusBar()
         binding = ActivitySearchBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -127,6 +131,13 @@ class SearchActivity : AppCompatActivity(), ProductAdapter.OnProductClickListene
     private fun showResultsCount(count: Int) {
         binding.tvResultsCount.text = "Found $count product${if (count != 1) "s" else ""}"
         binding.tvResultsCount.visibility = View.VISIBLE
+    }
+    private fun hideStatusBar() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val controller = WindowInsetsControllerCompat(window, window.decorView)
+        controller.hide(WindowInsetsCompat.Type.statusBars())
+        controller.systemBarsBehavior =
+            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     }
 
     // ProductAdapter.OnProductClickListener implementation

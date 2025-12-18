@@ -43,6 +43,7 @@ android {
 
 dependencies {
 
+    val room_version = "2.7.0"
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -52,6 +53,8 @@ dependencies {
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
+    implementation(libs.androidx.room.common.jvm)
+    implementation(libs.androidx.room.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -64,6 +67,15 @@ dependencies {
 
     // Charts
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+
+
+    implementation("androidx.room:room-runtime:$room_version")
+    // Kotlin Extensions and Coroutines support
+    implementation("androidx.room:room-ktx:${room_version}")
+// Optional - Paging 3 Integration
+    implementation("androidx.room:room-paging:${room_version}")
+    kapt("androidx.room:room-compiler:${room_version}")
 
 
     // Hilt

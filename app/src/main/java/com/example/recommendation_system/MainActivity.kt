@@ -40,10 +40,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-//        binding.chipCategories.setOnClickListener {
-//            // Show categories dialog
-//            showCategoriesDialog()
-//        }
+        binding.viewHidtory.setOnClickListener {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+        }
 //
 //        binding.chipMethods.setOnClickListener {
 //            // Show recommendation methods
@@ -51,23 +51,23 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-        // Logout button
-        binding.btnProfile.setOnClickListener {
-
-
-            // Clear local login flag
-            getSharedPreferences("app_prefs", MODE_PRIVATE)
-                .edit {
-                    putBoolean("user_logged_in", false)
-                }
-
-            // Go to Login
-            val intent = Intent(this,LoginActivity::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            }
-            startActivity(intent)
-            finish()
-        }
+//        // Logout button
+//        binding.btnProfile.setOnClickListener {
+//
+//
+//            // Clear local login flag
+//            getSharedPreferences("app_prefs", MODE_PRIVATE)
+//                .edit {
+//                    putBoolean("user_logged_in", false)
+//                }
+//
+//            // Go to Login
+//            val intent = Intent(this,LoginActivity::class.java).apply {
+//                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+//            }
+//            startActivity(intent)
+//            finish()
+//        }
     }
 
     @SuppressLint("SetTextI18n")

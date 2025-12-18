@@ -39,6 +39,7 @@
     <color name="card_background">#FFFFFFFF</color>
     <color name="card_elevated">#FFFBFE</color>
     <color name="card_outline">#79747E</color>
+    <color name="card_stroke">#E0E0E0</color>
 
     <!-- Text colors -->
     <color name="text_primary">#1D1B20</color>
@@ -49,6 +50,9 @@
     <color name="state_pressed">#1F000000</color>
     <color name="state_focused">#1F000000</color>
     <color name="state_hovered">#14000000</color>
+
+    <color name="star_selected">#FFC107</color>
+    <color name="star_unselected">#BDBDBD</color>
 
     <!-- Divider color -->
     <color name="divider">#1F000000</color>

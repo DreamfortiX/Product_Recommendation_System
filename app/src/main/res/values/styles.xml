@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/star_unselected</item>
+        <item name="colorControlActivated">@color/star_selected</item>
+    </style>
+</resources>

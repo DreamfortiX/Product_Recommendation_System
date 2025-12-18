@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.widget.Toast
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recommendation_system.Adapters.CompareProductsAdapter
+import com.example.recommendation_system.data.local.AppDatabase
+import com.example.recommendation_system.data.local.toSavedProduct
 import com.example.recommendation_system.data.model.Product
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.charts.PieChart
@@ -20,6 +23,7 @@ import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.formatter.PercentFormatter
 import com.github.mikephil.charting.utils.ColorTemplate
+import kotlinx.coroutines.launch
 
 class CompareProductsActivity : AppCompatActivity() {
 
@@ -54,6 +58,20 @@ class CompareProductsActivity : AppCompatActivity() {
 
         setupBarChart(barChart, productsByPrice)
 //        setupPieChart(pieChart, productsByPrice)
+
+        // Save the best product (lowest price) to Room after comparison
+        val bestProduct = productsByPrice.firstOrNull()
+        if (bestProduct != null) {
+            val db = AppDatabase.getInstance(this)
+            lifecycleScope.launch {
+                try {
+                    db.savedProductDao().upsert(bestProduct.toSavedProduct(isLowPrice = true))
+                    Toast.makeText(this@CompareProductsActivity, "Best product saved", Toast.LENGTH_SHORT).show()
+                } catch (e: Exception) {
+                    Toast.makeText(this@CompareProductsActivity, "Failed to save: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 
     private fun setupBarChart(barChart: BarChart, products: List<Product>) {
